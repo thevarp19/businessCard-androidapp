@@ -15,10 +15,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AccountCircle
 import androidx.compose.material.icons.rounded.Email
 import androidx.compose.material.icons.rounded.Phone
-import androidx.compose.material.icons.rounded.Share
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -57,17 +55,16 @@ class MainActivity : ComponentActivity() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-//            val image = painterResource(R.drawable.my_logo)
-//            Image(
-//                painter = image, contentDescription = null, Modifier.fillMaxWidth(0.3f)
-//            )
-            Text(text = stringResource(R.string.my_name), fontSize = 50.sp, color = Color.White)
+            val image = painterResource(R.drawable.my_logo)
+            Image(
+                painter = image, contentDescription = null, Modifier.fillMaxWidth(0.3f)
+            )
+            Text(text = stringResource(R.string.my_name), fontSize = 40.sp, color = White)
             Text(text = stringResource(R.string.my_title), fontSize = 25.sp, color = Green)
             Spacer(modifier = Modifier.padding(bottom = 200.dp))
             Divider(modifier = Modifier.fillMaxWidth(), color = Color(0xFF4F6C79))
             Contacts(
                 text = stringResource(R.string.my_phone_number),
-                textBlur = 5.dp,
                 icon = Icons.Rounded.Phone
             )
             Divider(modifier = Modifier.fillMaxWidth(), color = Color(0xFF4F6C79))
@@ -95,7 +92,7 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier.weight(1f)
             )
             Text(
-                text = text, color = Color.White, modifier = Modifier
+                text = text, color = White, modifier = Modifier
                     .weight(3f)
                     .blur(textBlur)
             )
