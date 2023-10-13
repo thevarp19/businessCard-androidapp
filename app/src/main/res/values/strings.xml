@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Business-card</string>
+    <string name="app_name">Business Card</string>
+    <string name="my_phone_number">+77475900005</string>
+    <string name="github">\@thevarp19</string>
+    <string name="my_email">erlandzhumabaev@gmail.com</string>
+    <string name="my_name">Yerlan Jumabayev</string>
+    <string name="my_title">Frontend Developer</string>
 </resources>
